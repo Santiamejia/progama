@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+header h1{
+    color: #2c3e50;
+    text-align: center;
+}
+header h2{
+    color: #2c3e50;
+    text-align: center;
+}
+header h3{
+    color: #2c3e50;
+    text-align: center;
+    font-size: 1rem;
+    
+}
+header p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: -10px;
+    padding: 3rem;
+}
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+nav h2 {
+    color: #2980b9;
+}
+nav ol {
+    padding-left: 20px;
+}
+nav a {
+    color: #e67e22;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de flashcards */
+.flashcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+/**Botones**/
+.boton {
+    padding: 1rem;
+    background-color: #ddd1d148;
+    border-radius: 0.6rem;
+    border-color: #d8ccc1;
+}
+.boton:hover {
+    background-color: #ddd6d6;
+    cursor: pointer;
+}
+/* Estilo de los flashcard */
+.flashcard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.flashcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.flashcard h2 {
+    color: #2980b9;
+}
+.flashcard img {
+    width: 100px;
+    display: block;
+    margin: 10px 0;
+}
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/* Responsive */
+@media (max-width: 900px) {
+    .flashcards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flashcard {
+        flex: 1 1 100%;
+    }
+}

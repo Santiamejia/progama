@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+.body-registro {
+    background-color:rgb(255, 255, 255);
+    background-size: cover;       /**ajusta a la pantalla **/
+    background-position: center;  /**centra la imagen**/
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color:rgb(0, 0, 0)
+}
+.cuadro-registro {
+    background-color: rgba(248, 243, 243, 0.863);
+    border-radius: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    max-width: 600px;
+    width: 100%;
+}
+.volver {
+  font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-items: first baseline;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-shadow: 2px 2px 0 rgb(0, 0, 0) 2px 2px rgb(61, 7, 7);
+}
+.logo{
+    width: 13rem;
+}
+
+/** registro **/
+.cuadro-registro {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 2.5rem;
+    max-width: 500px; /* Para ajustar el ancho del formulario*/
+    width: 100%;
+    background: ();
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgb(35, 16, 104);
+    padding: 2rem;
+    margin-top: 0;
+}
+.contenedor-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+.titulo-registro {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.719);
+    padding:2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.registro-formulario {
+  font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.registro-formulario label {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.registro-formulario input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 30rem;
+}
+.registro-formulario button {
+  font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    padding:0.8rem;
+    border-radius: 10rem;
+    margin: 0 auto;
+    display: block;
+    width: 101%;    
+}
+.registro-formulario div {
+    margin-bottom: 1.6rem; /**Se usa para separar entre elementos **/
+}
+.inicio-sesion {
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    color:black
+}
+.fila-doble {
+    display: flex;
+    gap: 2rem;        /**espacio entre los dos campos**/
+    margin-bottom: 0;
+    max-width: 30rem;
+}
+.fila-doble div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;  /**elimina margen extra**/
+}
+
+.registro-formulario div {
+    margin-bottom: 0.4rem;  /**reduce el espacio general entre campos**/
+}
+/** Tipos de letras**/
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-slab-uniquifier {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.nunito-sans-uniquifier {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}

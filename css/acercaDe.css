@@ -1,0 +1,306 @@
+
+html { font-size: 62.5%; }
+*, *:before, *:after { box-sizing: border-box; }
+
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; }
+
+/** Logo **/
+.logo {
+    margin: 0; padding: 0;
+    display: block; line-height: 0;
+    background-color: #fff;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; z-index: 100;
+    box-sizing: border-box;
+}
+.logo a {
+    display: flex; align-items: center;
+    text-decoration: none; gap: 15px;
+    justify-content: center;
+}
+.logo img { width: 200px; display: block; }
+.slogan {
+    display: flex; text-align: end; align-content: end;
+    padding-top: 4.5rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem; color: black;
+}
+.slogan2 {
+    display: flex; text-align: end;
+    font-family: "Dancing Script", cursive;
+    color: #8b0000; font-size: 2rem;
+}
+
+/** Nav **/
+.nav-bar {
+    display: flex;
+    background-color: #666363f6;
+    padding: 0.8rem 2.5rem 0.8rem 5rem;
+    width: 100%;
+    margin-top: 90px;
+    align-items: center;
+}
+.nav-container {
+    display: flex; gap: 18rem;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+.nav-social {
+    display: flex; gap: 2rem;
+    margin-left: auto;
+    font-size: 3rem; padding-right: 3rem;
+    align-items: center; color: white;
+}
+
+/**Generales**/
+.titulo-acerca {
+    background: linear-gradient(180deg, #666363f6 0%, #4e8b74 50%, #ffffff 100%);
+    text-align: center;
+    padding: 3rem 0rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.titulo-acerca:before {
+    content: '"';
+    font-family: "Abril Fatface", serif;
+    font-size: 50rem;
+    color: rgba(255,255,255,0.04);
+    position: absolute;
+    top: -10rem; left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    line-height: 0;
+}
+.titulo-acerca h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6rem;
+    margin: 0; 
+    padding: 0;
+    color: rgb(255, 255, 255);
+    position: relative;
+    line-height: 1;
+}
+.titulo-acerca p {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.2;
+}
+
+/**Divisor decorativo**/
+.divisor {
+    display: flex; align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 5rem 1rem;
+    color: #1a6458;
+    font-size: 2.5rem;
+}
+.divisor::before,
+.divisor::after {
+    content: '';
+    flex: 1;
+    height: 2.2px;
+    background: linear-gradient(to right, transparent, #135bc7);
+}
+.divisor::after {
+    background: linear-gradient(to left, transparent, #007b8b);
+}
+
+/* ── Secciones generales ── */
+.seccion {
+    padding: 5rem 8rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-color: #1a6458;
+}
+.seccion-titulo {
+    font-family: "Abril Fatface", serif;
+    font-size: 5rem;
+    color: #1a6458;
+    margin: 0 0 1rem 0;
+}
+.seccion-subtitulo {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
+    color: #1a6458;
+    margin: 0 0 3rem 0;
+}
+.seccion p {
+    font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
+    font-size: 1.8rem;
+    color: #000000d5;
+    line-height: 2;
+}
+
+/* ── Historia: layout con línea lateral ── */
+.historia-wrap {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+}
+.historia-linea {
+    flex-shrink: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #1a6458, transparent);
+    border-radius: 4px;
+    min-height: 400px;
+}
+
+/* ── Misión y visión: dos tarjetas ── */
+.mv-grid {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.mv-card {
+    flex: 1;
+    min-width: 280px;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 4px 10px #1a6458;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mv-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px #1a6458;
+}
+.mv-card h3 {
+    font-family: "Abril Fatface", serif;
+    font-size: 3rem;
+    color: #1a6458;
+    margin: 0 0 1rem 0;
+}
+.mv-card p {
+    font-size: 1.7rem;
+    color: #444;
+    margin: 0;
+}
+.mv-card .icono {
+    font-size: 4rem;
+    color: #1a6458;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/** Equipo **/
+.equipo-card {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    background: linear-gradient(135deg, #fff 60%, #fff5f5);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px #1a6458;
+    padding: 4rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.equipo-avatar {
+    width: 160px; 
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgb(61,7,7), #8b0000);
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Abril Fatface", serif;
+    font-size: 6rem;
+    color: white;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #1a6458;
+}
+.equipo-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* recorta la imagen para llenar el círculo */
+    border-radius: 0%;    
+}
+.equipo-info h3 {
+    font-family: "Abril Fatface", serif;
+    font-size: 3.5rem;
+    color: #1a6458;
+    margin: 0 0 0.5rem 0;
+    border-color: #1a6458;
+    
+}
+
+.equipo-info .rol {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.2rem;
+    color: #1a6458;
+    margin: 0 0 1.5rem 0;
+}
+.equipo-info p {
+    font-size: 1.7rem;
+    color: #444;
+    margin: 0;
+}
+.equipo-social {
+    display: flex; gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    color: #1a6458;
+}
+.equipo-social a { transition: transform 0.2s; }
+.equipo-social a:hover { transform: scale(1.2); color: rgb(61,7,7); }
+
+/* ── Franja separadora ── */
+.franja {
+    background: linear-gradient(180deg, #fff 5%,   15%, #4e8b74 50%, #ffffff 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 3rem;
+}
+.franja p {
+    font-family: "Abril Fatface", serif;
+    font-size: 3rem;
+    margin: 0;
+}
+.franja span {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+/* ── Footer ── */
+.footer-section {
+    font-family: 'Lucida Sans', 'Lucida Grande', Verdana, sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(10,10,9);
+    color: antiquewhite;
+    text-align: center;
+    padding: 0.8rem;
+    width: 100%; margin: 0;
+}
+
+/* ── Animaciones de entrada ── */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .seccion { padding: 4rem 3rem; }
+    .historia-wrap { flex-direction: column; }
+    .nav-container { gap: 5rem; }
+    .equipo-card { flex-direction: column; align-items: flex-start; }
+}

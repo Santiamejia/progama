@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Básico HTML y CSS</title>
+    <link rel="stylesheet" href="../css/principal.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Tutorial de HTML y CSS</h1>
+        <h2>Por: Santiago Mejía</h2>
+        <h3>Fundamentos en la Implementación de Componentes Front-end, HTML, CSS, JS</h3>
+        <h3>GA6-220501096-AA4-EV01</h3>
+
+        <p>Hoy es <span id="fecha-hora"></span></p>
+    </header>
+
+    <nav>
+        <h2>Contenido del tutorial</h2>
+        <ol>
+            <li><a href="#html">¿Qué es HTML?</a></li>
+            <li><a href="#css">¿Qué es CSS?</a></li>
+            <li><a href="#estructura">Estructura básica de una página web</a></li>
+        </ol>
+    </nav>
+
+    <main>
+        <div class="flashcards-container">
+            <div class="flashcard" id="html">
+                <h2>¿Qué es HTML?</h2>
+                <img src="../img/html.png" alt="Logo HTML">
+                <p>HTML (HyperText Markup Language) es el lenguaje que permite estructurar el contenido de una página web, organizando títulos, párrafos, enlaces, listas e imágenes de manera clara y ordenada.</p>
+            </div>
+
+            <div class="flashcard" id="css">
+                <h2>¿Qué es CSS?</h2>
+                <img src="../img/css.png" alt="Logo CSS">
+                <p>CSS (Cascading Style Sheets) se utiliza para dar estilo a las páginas web, definiendo colores, tamaños, márgenes y posiciones. También permite crear diseños consistentes y añadir efectos visuales como transiciones y animaciones.</p>
+            </div>
+
+            <div class="flashcard" id="estructura">
+                <h2>Estructura básica de una página web</h2>
+                <p>La estructura básica de una página web incluye etiquetas como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>. El contenido visible se coloca dentro del <code>&lt;body&gt;</code>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button class="boton"> <a href="index.html">Volver al inicio</a> </button>
+    </footer>
+
+    <script src="../js/fecha.js"></script>
+</body>
+</html>
